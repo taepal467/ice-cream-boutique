@@ -1,3 +1,3 @@
-import * as module from './main'
+import { homeModule } from './home'
 
-module.mainComponent();
+module.homeModule();
