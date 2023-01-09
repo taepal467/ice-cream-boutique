@@ -2,7 +2,7 @@ import './style.css';
 import background from './background.jpg';
 import logo from './logo_transparent.png';
 
-function component() {
+function mainComponent() {
     const content = document.getElementById("content");
     const container = document.createElement("div");
     const header = document.createElement("h1");
@@ -87,4 +87,4 @@ function component() {
    content.appendChild(logoText);
    content.appendChild(nav);  
 }
- document.body.appendChild(component());
+ document.body.appendChild(mainComponent());
