@@ -1,0 +1,13 @@
+.title {
+    color: antiquewhite;
+    font-size: 3.5rem;
+    text-decoration: underline;
+    margin-top: -20px;
+}
+
+.contactDiv {
+    color: antiquewhite;
+    font-size: 1.5rem;
+    line-height: 1.75;
+    font-weight: 400;
+}
