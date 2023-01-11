@@ -1,0 +1,65 @@
+/* Titles */
+.mainTitle {
+    color: antiquewhite;
+    font-size: 3.5rem;
+    text-decoration: underline;
+}
+
+.titles {
+    color: antiquewhite;
+    font-size: 2.5rem;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+/* Images */
+.images {
+    width: 300px;
+    height: 300px;
+    padding: 0 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.images:hover  {
+    opacity: 0.5;
+}
+
+/* Main div */
+.mainDiv {
+    background-color: #242526;
+    border: 2px solid antiquewhite;
+    border-radius: 25px;
+    width: 100vw;
+    height: 450px;
+    margin-top: -20px;
+}
+
+.scroll {
+    width: 100vw;
+    height: 450px;
+     background: #242526;
+    overflow-y: scroll;
+ }
+ .scroll::-webkit-scrollbar {
+     width: 12px;
+ }
+ 
+ .scroll::-webkit-scrollbar-track {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+     border-radius: 25px;
+ }
+ 
+ .scroll::-webkit-scrollbar-thumb {
+     border-radius: 25px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); 
+ }
+
+ @media (max-width: 768px) {
+    .mainDiv {
+        margin-top: 20px;
+    }
+}
+ 
+
+
