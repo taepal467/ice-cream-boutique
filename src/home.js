@@ -1,30 +1,16 @@
-import './style.css';
-import background from './background.jpg';
-import logo from './logo_transparent.png';
+import './home.css';
 
 export function homeModule() {
     const content = document.getElementById("content");
-    const container = document.createElement("div");
+
+    content.replaceChildren();
+
     const header = document.createElement("h1");
     const word1 = document.createElement("span");
     const word2 = document.createElement("span");
     const word3 = document.createElement("span");
     const word4 = document.createElement("span");
     const logoText = document.createElement("p");
-    const nav = document.createElement("nav");
-    const ul = document.createElement("ul");
-    const home = document.createElement("li");
-    const about = document.createElement("li");
-    const menu = document.createElement("li");
-    const contact = document.createElement("li");
-    const a = document.createElement("a");
-
-
-    //adding href attribute
-    a.href = 
-    home.textContent = "Home";
-    menu.textContent = "Menu";
-    contact.textContent = "Contact";
 
     //header animation text
     word1.textContent = "Tae's ";
@@ -44,42 +30,14 @@ export function homeModule() {
     word4.classList.add("title-word-4")
 
     //nav 
-    nav.classList.add("navBar");
-    ul.classList.add("navMenu");
-    home.classList.add("home");
-    home.classList.add("navLinks");
-    menu.classList.add("navLinks");
-    contact.classList.add("navLinks");
-
-    logoText.textContent = ` "The best time for ice cream is always"`;
+    logoText.textContent =' "The best time for ice cream is always" ';
     logoText.classList.add("logo");
     header.classList.add("header");
   
-    //images
-    const myBackground = new Image();
-    myBackground.src = background;
-    myBackground.classList.add("backgroundImg");
-
-    const myLogo = new Image();
-    myLogo.src = logo;
-    myLogo.classList.add("logoImg");
-
-    container.appendChild(header);
+    content.appendChild(header);
     header.appendChild(word1);
     header.appendChild(word2);
     header.appendChild(word3);
     header.appendChild(word4);
-
-    ul.appendChild(home);
-    ul.appendChild(menu);
-    ul.appendChild(contact);
-
-    nav.append(myLogo);
-    nav.appendChild(ul);
-
-   content.appendChild(myBackground);
-   content.appendChild(container);
    content.appendChild(logoText);
-   content.appendChild(nav);  
 }
- document.body.appendChild(homeModule());
